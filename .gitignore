@@ -1,6 +1,11 @@
 private_key = gbq_path + "\\wedge-project-np-b0b69ff1eba6.json"
 gqb_credentials = service_account.Credentials.from_service_account_file(private_key)
 
+#wedge_summary = pd.DataFrame(columns=['file_name', 'num_rows', 'num_cards', 'num_dates'])
+gbq_path = "\\Users\\npleg\\OneDrive\\Documents\\GitHub\\ADA\\wedge\\wedge-project"
+gpq_project_id = "wedge_project_np"
+gbq_dataset_id = "wedge"
+
 
 data/*
 

@@ -1,3 +1,6 @@
+private_key = gbq_path + "\\wedge-project-np-b0b69ff1eba6.json"
+gqb_credentials = service_account.Credentials.from_service_account_file(private_key)
+
 
 data/*
 

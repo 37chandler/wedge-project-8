@@ -30,28 +30,28 @@ When calculating relative difference, use the formula
 ` (your_results - john_results)/john_results)`.
 | Query | Your Results | John's Results | Difference | Rel. Diff |
 |---|---|---|---|---|
-| Total Rows | | | | |
-| January 2012 Rows | | | | |
-| October 2012 Rows | | | | |
-| Month with Fewest | | | Yes/No | NA |
-| Num Rows in Month with Fewest | | | | |
-| Month with Most | | | Yes/No | NA |
-| Num Rows in Month with Most | | | | |
-| Null_TS | | | | |
-| Null_DT | | | | |
-| Null_Local | | | | |
-| Null_CN | | | | |
-| Num 5 on High Volume Cards | | | Yes/No | NA |
-| Num Rows for Number 5 | | | | |
-| Num Rows for 18736 | | | | |
-| Product with Most Rows | | | Yes/No | NA |
-| Num Rows for that Product | | | | |
-| Product with Fourth-Most Rows | | | Yes/No | NA |
-| Num Rows for that Product | | | | |
-| Num Single Record Products | | | | |
-| Year with Highest Portion of Owner Rows | | | Yes/No | NA |
-| Fraction of Rows from Owners in that Year | | | | |
-| Year with Lowest Portion of Owner Rows | | | Yes/No | NA |
-| Fraction of Rows from Owners in that Year | | | | |
+| Total Rows | 85760139| 85760139 | 0 | 0 |
+| January 2012 Rows | 1070907 | 1070907  | 0 | 0 |
+| October 2012 Rows | 1042287 | 1042287  | 0  | 0 |
+| Month with Fewest | Feb | Feb | No | NA |
+| Num Rows in Month with Fewest | 6556770 | 6556770 | 0 | 0 |
+| Month with Most | Jan | Jan | No | NA |
+| Num Rows in Month with Most | 7993503 | 7993503 | 0 | 0 |
+| Null_TS | 0 | 7123792 | -7123792 | -1 |
+| Null_DT | 0 | 0 | 0 | 0 |
+| Null_Local | 234843 | 234843 | 0 | 0 |
+| Null_CN | 0 | 0 | 0 | 0 |
+| Num 5 on High Volume Cards | 14987 | 14987 | Yes | NA |
+| Num Rows for Number 5 | 460625 | 460630 | -5 | -0.00001 |
+| Num Rows for 18736 | 12153 | 12153 | 0 | 0 |
+| Product with Most Rows | banana organic | banana organic | No | NA |
+| Num Rows for that Product | 908639 | 908639 | 0 | 0 |
+| Product with Fourth-Most Rows | avocado hass organic | avocado hass organic | No | NA |
+| Num Rows for that Product | 456771 | 456771 | 0 | 0 |
+| Num Single Record Products | 2741 | 2769 | -28 | -0.010 |
+| Year with Highest Portion of Owner Rows | 2012 | 2012 | No | NA |
+| Fraction of Rows from Owners in that Year | 0.74 | 0.74 | 0 | 0 |
+| Year with Lowest Portion of Owner Rows | 2017 | 2017 | No | NA |
+| Fraction of Rows from Owners in that Year | 0.75 | 0.75 | 0 | 0 |
 ## Reflections
 <!-- I'd love to get 100-200 words on your experience doing the Wedge Project -->

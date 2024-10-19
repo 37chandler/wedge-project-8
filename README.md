@@ -1,60 +1,21 @@
 
 # Applied Data Analytics
-## Wedge Project
-<!-- Any general commentary you'd like to say about the project -->
-### Task 1
-* Files for this task:
-<!-- List of file or files here -->
-Loads all data into GBQ data set.
-`File1 Name`:
-Description of what this file does.
-<!-- Repeat for each file -->
-### Task 2
-* Files for this task:
-<!-- List of file or files here -->
-Loads all data into GBQ data set.
-`File1 Name`:
-Description of what this file does.
-<!-- Repeat for each file -->
-### Task 3
-* Files for this task:
-<!-- List of file or files here -->
-Loads all data into GBQ data set.
-`File1 Name`:
-Description of what this file does.
-<!-- Repeat for each file -->
-## Query Comparison Results
-Fill in the following table with the results from the
-queries contained in `gbq_assessment_query.sql`. You only
-need to fill in relative difference on the rows where it applies.
-When calculating relative difference, use the formula
-` (your_results - john_results)/john_results)`.
-| Query | Your Results | John's Results | Difference | Rel. Diff |
-|---|---|---|---|---|
-| Total Rows | 85760139| 85760139 | 0 | 0 |
-| January 2012 Rows | 1070907 | 1070907  | 0 | 0 |
-| October 2012 Rows | 1042287 | 1042287  | 0  | 0 |
-| Month with Fewest | Feb | Feb | No | NA |
-| Num Rows in Month with Fewest | 6556770 | 6556770 | 0 | 0 |
-| Month with Most | Jan | Jan | No | NA |
-| Num Rows in Month with Most | 7993503 | 7993503 | 0 | 0 |
-| Null_TS | 72189676* | 7123792 | 65065884 | 9.13 |
-| Null_DT | 0 | 0 | 0 | 0 |
-| Null_Local | 234843 | 234843 | 0 | 0 |
-| Null_CN | 0 | 0 | 0 | 0 |
-| Num 5 on High Volume Cards | 14987 | 14987 | Yes | NA |
-| Num Rows for Number 5 | 460625 | 460630 | -5 | -0.00001 |
-| Num Rows for 18736 | 12153 | 12153 | 0 | 0 |
-| Product with Most Rows | banana organic | banana organic | No | NA |
-| Num Rows for that Product | 908639 | 908639 | 0 | 0 |
-| Product with Fourth-Most Rows | avocado hass organic | avocado hass organic | No | NA |
-| Num Rows for that Product | 456771 | 456771 | 0 | 0 |
-| Num Single Record Products | 2741 | 2769 | -28 | -0.010 |
-| Year with Highest Portion of Owner Rows | 2012 | 2012 | No | NA |
-| Fraction of Rows from Owners in that Year | 0.74 | 0.74 | 0 | 0 |
-| Year with Lowest Portion of Owner Rows | 2017 | 2017 | No | NA |
-| Fraction of Rows from Owners in that Year | 0.75 | 0.75 | 0 | 0 |
+## Wedge Project Overview
+This project explores data engineering concepts using a rich dataset provided by the Wedge Co-Op, the largest co-operative grocery store in the US, located in Minneapolis, MN. The dataset contains transaction-level data from the point-of-sale (POS) system, spanning from January 1, 2010, to January 2017. The data reflects every item logged in receipts, offering insights into customer behavior, particularly among the 75% of transactions made by member-owners.
 
-* Null_TS: this one has something going on that I am unable to figure out. When 
-## Reflections
-<!-- I'd love to get 100-200 words on your experience doing the Wedge Project -->
+The primary challenge involves transforming raw POS records, which include non-item transactions (e.g., payments, taxes, and discounts), into clean, consumable datasets. The project requires understanding various file formats and structures, including different delimiters and formats for missing values.
+
+By working with this dataset, the goal is to develop skills in defining and preparing data sets suitable for further analysis, a critical component of data engineering.
+
+
+## Wedge Project Tasks
+To achieve the project goals, three key tasks are conducted:
+
+#### Building a Transaction Database in Google BigQuery
+The first task involves uploading all transaction records from the Wedge Co-Op dataset to Google BigQuery. This requires ensuring correct column data types and properly handling null values. The aim is to structure the data programmatically for better analysis and to upload seemlessly to Google BigQuery.
+
+#### Creating a Sample of Owners
+In this task, a Python script is used to extract a sample of owner records (excluding non-owners). The script connects to the Google BigQuery instance, retrieves a list of owners, selects a sample (recommended size: ~250 MB), and saves these records in a local text file. This sample serves as a manageable subset for further local analysis.
+
+#### Building Summary Tables
+The final task focuses on creating summary tables to answer business questions such as sales trends, popular items, and owner spending patterns. Using Python and SQLite, the script processes the owner records from Google BigQuery, builds tables (e.g., sales by date, sales by owner, and sales by product description), and stores them in a relational database (.db file). The summary tables provide a streamlined view for quick insights.

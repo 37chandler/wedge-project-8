@@ -37,7 +37,7 @@ When calculating relative difference, use the formula
 | Num Rows in Month with Fewest | 6556770 | 6556770 | 0 | 0 |
 | Month with Most | Jan | Jan | No | NA |
 | Num Rows in Month with Most | 7993503 | 7993503 | 0 | 0 |
-| Null_TS | 0 | 7123792 | -7123792 | -1 |
+| Null_TS | 72189676* | 7123792 | 65065884 | 9.13 |
 | Null_DT | 0 | 0 | 0 | 0 |
 | Null_Local | 234843 | 234843 | 0 | 0 |
 | Null_CN | 0 | 0 | 0 | 0 |
@@ -53,5 +53,7 @@ When calculating relative difference, use the formula
 | Fraction of Rows from Owners in that Year | 0.74 | 0.74 | 0 | 0 |
 | Year with Lowest Portion of Owner Rows | 2017 | 2017 | No | NA |
 | Fraction of Rows from Owners in that Year | 0.75 | 0.75 | 0 | 0 |
+
+* Null_TS: this one has something going on that I am unable to figure out. When 
 ## Reflections
 <!-- I'd love to get 100-200 words on your experience doing the Wedge Project -->

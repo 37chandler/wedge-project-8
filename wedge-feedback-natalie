@@ -1,0 +1,26 @@
+## Feedback 
+
+I think the NULL-as-string vs "actual NULL" is the thing causing that discrepancy. No need to hunt it down. 
+
+Your point about when to scrap everything versus when to push forward on the current path is a really important one. We should discuss this in class at some point. 
+
+
+Nice work on this project, you can consider it complete. I'm going to read your files in order and give you feedback
+as I move through them, from Task 1 to Task 3. 
+
+
+### Task 1
+
+* Great work on the processing of the zip files. Very easy to read and comprehensive. 
+* Also nice work on the upload. That's about as efficient as it gets. 
+
+### Task 2
+
+* Nice job on this task. 
+* I appreciate that you took the time to do this with the reproducible approach. 
+
+### Task 3
+
+* Nice job on this, very efficient. 
+* Great job getting the query correct. MANY people failed to do that. 
+
